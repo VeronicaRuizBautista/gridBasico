@@ -1,1 +1,74 @@
 @import url(variables.css);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--color-primary);
+}
+.container {
+    background-color: var(--color-primary);
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(12 1fr);
+    grid-template-rows: repeat(9 1fr);
+    grid-template-areas: 
+    "menu menu menu menu menu menu menu menu menu menu menu menu"
+    "notification notification notification notification sales sales sales sales sales sales balance balance"
+    "notification notification notification notification sales sales sales sales sales sales balance balance"
+    "week week week week sales sales sales sales sales sales balance balance"
+    "week week week week sales sales sales sales sales sales devs devs"
+    "week week week week sales sales sales sales sales sales devs devs"
+    "product product product product product timeline timeline timeline timeline timeline timeline timeline"
+    "product product product product product timeline timeline timeline timeline timeline timeline timeline"
+    "product product product product product timeline timeline timeline timeline timeline timeline timeline"
+    ;
+    background-color: white;
+    width: 800px;
+    height: 600px;
+    margin: 15px auto;
+    border-radius: 5px;
+}
+.item_1{
+    grid-area: menu;
+    display: flex;
+    align-items: center;
+}
+.item_1 >div {
+    width: 50%;
+}
+.buscador {
+    display: flex;
+    justify-content: space-evenly;
+}
+.item_2 {
+    background-color: orange;
+    grid-area: notification;
+}
+.item_3 {
+    background-color: pink;
+    grid-area: sales;
+}
+.item_4 {
+    background-color: red;
+    grid-area: balance;
+}
+.item_5 {
+    grid-area: week;
+    background-color: blueviolet;
+}
+.item_6 {
+    grid-area: devs;
+    background-color: aqua;
+}
+.item_7 {
+    grid-area: product;
+    background-color: salmon;
+}
+.item_8 {
+    grid-area: timeline;
+    background-color: tan;
+}
