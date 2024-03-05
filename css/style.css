@@ -38,6 +38,7 @@ grid-template-areas:
 }
 
 .item_1{
+    background-color: white;
     grid-area: menu;
     display: flex;
     align-items: center;
@@ -354,5 +355,10 @@ background: linear-gradient(86deg, rgb(122, 196, 212) 0%, rgba(185,240,43,1) 100
 }
 .item_8 {
     grid-area: timeline;
-    background-color: tan;
+    background-color: white;
+    display: flex;
+    padding: 10px;
+}
+.item_8 img {
+    width: 100%;
 }
